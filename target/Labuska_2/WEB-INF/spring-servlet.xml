@@ -10,10 +10,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="receiver" class="org.ilyushenko.Labuska_2.interfaces.ReceiverImpl"/>
-    <bean id="sender" class="org.ilyushenko.Labuska_2.interfaces.SenderImpl">
-        <constructor-arg name="receiver" ref="receiver"/>
-    </bean>
 
 </beans>
 

@@ -1,7 +1,12 @@
 package org.ilyushenko.Labuska_2.interfaces;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class SenderImpl implements Sender{
     private final Receiver receiver;
+    @Autowired
     public SenderImpl(Receiver receiver) {
        this.receiver=receiver;
     }
